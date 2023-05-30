@@ -1,0 +1,66 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>a8b522f0-65d5-4d01-804c-b4eb8ac459ea</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>MaturaProject.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>MaturaProject</Name>
+    <RootNamespace>MaturaProject</RootNamespace>
+    <InterpreterId>MSBuild|maturaEnv|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="MaturaProject.py" />
+    <Compile Include="NSA\NewsArticle.py" />
+    <Compile Include="NSA\NewsScraper.py" />
+    <Compile Include="NSA\__init__.py" />
+    <Compile Include="results\BS.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="..\maturaEnv\">
+      <Id>maturaEnv</Id>
+      <Version>3.8</Version>
+      <Description>maturaEnv (Anaconda 2020.07)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NSA\" />
+    <Folder Include="NSA\__pycache__\" />
+    <Folder Include="results\" />
+    <Folder Include="results\Old\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NSA\__pycache__\NewsArticle.cpython-39.pyc" />
+    <Content Include="NSA\__pycache__\NewsScraper.cpython-39.pyc" />
+    <Content Include="NSA\__pycache__\__init__.cpython-39.pyc" />
+    <Content Include="results\dataframe.csv" />
+    <Content Include="results\Old\dataframe - Copy %282%29.csv" />
+    <Content Include="results\Old\dataframe - Copy.csv" />
+    <Content Include="results\results.csv" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
