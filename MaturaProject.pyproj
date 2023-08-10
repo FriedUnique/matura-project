@@ -22,8 +22,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Resources\LSTM - Copy.py" />
+    <Compile Include="Resources\AAAAAA.py" />
     <Compile Include="DataFrameComputer.py" />
+    <Compile Include="LSTM.py" />
+    <Compile Include="Resources\FuckingLSTM.py" />
     <Compile Include="Helper.py" />
+    <Compile Include="Resources\LSTM.py" />
     <Compile Include="MaturaProject.py" />
     <Compile Include="Evaluator.py" />
     <Compile Include="Sentiment\NewsArticle.py" />
@@ -43,7 +48,36 @@
     </Interpreter>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Results\" />
+    <Folder Include="results\FinalData\" />
+    <Folder Include="results\Models\" />
+    <Folder Include="results\RawData\" />
     <Folder Include="Sentiment\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="Resources\LSTM_Diagramm.png" />
+    <Content Include="results\FinalData\alphabet_finalDataframe.csv" />
+    <Content Include="results\FinalData\Apple_finalDataframe.csv" />
+    <Content Include="results\FinalData\costco_finalDataframe.csv" />
+    <Content Include="results\FinalData\intel_finalDataframe.csv" />
+    <Content Include="results\FinalData\meta_finalDataframe.csv" />
+    <Content Include="results\FinalData\microsoft_finalDataframe.csv" />
+    <Content Include="results\FinalData\nvidia_finalDataframe.csv" />
+    <Content Include="results\FinalData\tesla_finalDataframe.csv" />
+    <Content Include="results\Models\model_acc_92.11.sav" />
+    <Content Include="results\Models\model_acc_92.11_info.json" />
+    <Content Include="results\Models\model_acc_93.26.sav" />
+    <Content Include="results\RawData\alphabet_rawdata.csv" />
+    <Content Include="results\RawData\Apple_rawdata.csv" />
+    <Content Include="results\RawData\costco_rawdata.csv" />
+    <Content Include="results\RawData\intel_rawdata.csv" />
+    <Content Include="results\RawData\meta_rawdata.csv" />
+    <Content Include="results\RawData\microsoft_rawdata.csv" />
+    <Content Include="results\RawData\nvidia_rawdata.csv" />
+    <Content Include="results\RawData\tesla_rawdata.csv" />
+    <Content Include="tickers.json" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

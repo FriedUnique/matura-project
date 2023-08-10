@@ -14,6 +14,9 @@ from datetime import datetime
 from typing import Dict, List
 
 
+import LSTM
+
+
 class SentimentFetcher:
     def __init__(self):
         self.threads: List[Thread] = []
@@ -54,6 +57,9 @@ class SentimentFetcher:
 
 
 if __name__ == "__main__":
-    SentimentFetcher.StartThreads(False)
-    finalDataFrame = Computer()
+
+    LSTM.Main()
+
+    #SentimentFetcher.StartThreads(False)
+    #finalDataFrame = Computer()
 
