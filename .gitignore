@@ -9,6 +9,15 @@ Results/Models/
 Results/Models/**
 Models/**
 Resources/
+TestResults/
+DataCopy/
+*.txt
+*.h5
+*.sav
+*.pkl
+*.xlsx
+ScrapeBloom.py
+Main.py
 
 
 # User-specific files
